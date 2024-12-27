@@ -1,0 +1,734 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Crimson Text";
+}
+
+.miniPage{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.miniPage button{
+    background-color:#a1c3d1;
+    color: #222;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0px;
+    margin-left:80px;
+    font-size: 10px;
+}
+
+.miniPage img{
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 80px;
+}
+
+.miniPage p{
+    margin: 10px 80px;
+}
+
+.lesTxt{
+    font-size: 20px;
+    color: #f0ebf4;
+    font-weight:300;
+}
+
+.infContainer hr{
+    background-color: #f0ebf4;
+    color: #f0ebf4;
+}
+
+.infStr{
+    width: 165px;
+    height:45px;
+    margin: 80px 0;
+    background-color: none;
+    background:linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255,0));
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255,0.18);
+    box-shadow: 0 8px 35px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt{
+    font-size: 35px;
+    font-weight:700;
+    color: #a1c3d1;
+
+}
+
+.Txt{
+    font-size: 35px;
+    font-weight:500;
+    color: #a1c3d1;
+    margin: 50px;
+    font-family: "Montserrat";
+
+}
+
+.lesTxt2{
+    font-size: 13px;
+    color:#7f97a1;
+    font-weight:300;
+}
+.homeContainer{
+    background:linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255,0));
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255,0.18);
+    box-shadow: 0 8px 35px 0 rgba(0, 0, 0, 0.37);
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap{
+    height: 600vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bgContainer{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-image: url(./zoltan-tasi-b3PuuRU8IPc-unsplash.jpg);
+}
+
+.cardsContainer{
+    width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.wrapper{
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 600vh;
+}
+
+.cart{
+    min-height:200px;
+    width: 200px;
+    background:linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255,0));
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255,0.18);
+    box-shadow: 0 8px 35px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.cart img{
+    width: 200px;
+    height: 170px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.descriptionContainer{
+    width: 200px;
+    min-height: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 1024px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+p{
+    margin: 2px;
+    filter: drop-shadow(0 8px 35px 0 rgba(0, 0, 0, 0.37));
+}
+
+
+.gray{
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    transition: 0.25s;
+    color: #f0ebf4;
+    font-size:10px;
+    padding: 0px 5px;
+    margin: 2px; 
+}
+
+.title{
+    color: #f172a1;
+    font-weight: 700;
+    font-size:15px;
+    word-wrap: break-all;
+    white-space:normal;
+    margin: 2px;
+    padding: 0px 5px;
+}
+
+.fa-star{
+    color: #a1c3d1;
+    font-weight: 700;
+    font-size:15px;
+    margin: 2px;
+    cursor: pointer;
+    padding: 0px 5px;
+}
+
+.price{
+    font-weight: 500;
+    font-size:15px;
+    color: #e64398;
+    margin: 2px;
+    padding: 0px 5px;
+}
+
+.cart button{
+    width: 97%;
+    height: 20px;
+    box-shadow: 0 8px 35px 0 rgba(0, 0, 0, 0.37);
+    border-radius:20px;
+    font-family: "Rakkas";
+    font-size:10px;
+    border: none;
+    background: linear-gradient(to left, #a1c3d1,#f172a1, #a1c3d1);
+    background-size: 200%;
+    transition: 0.45s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    color: #f0ebf4;
+    margin: 0 2px;
+}
+
+.cart button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 140%;
+    background-color: rgba(255,255,255, 0.6);
+    transform:translate(-4em) skewX(-45deg);
+}
+
+.cart button:hover::before{
+    animation: move 1s;
+}
+
+@keyframes move {
+    0%{
+        transform:translate(-4em) skewX(-45deg);
+    }
+
+    100%{
+        transform:translate(23em) skewX(-45deg);
+    }
+}
+
+.infContainer{
+    width: 400px;
+    height: 400px;
+    background:linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255,0));
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255,0.18);
+    box-shadow: 0 8px 35px 0 rgba(0, 0, 0, 0.37);
+}
+
+.btnTrolley{
+    width: 74px;
+    height: 74px;
+    display: inline-flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(241, 114, 161,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    background:linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255,0));
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    color: #a1c3d1;
+    border: 1px solid rgba(255, 255, 255,0.18);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    }
+  
+  .btnTrolley::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(74px + 12px);
+    min-height: calc(74px + 12px);
+    border: 6px solid rgba(241, 114, 161);
+    box-shadow: 0 0 60px rgba(241, 114, 161,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .btnTrolley:hover, 
+  .btnTrolley:focus {
+    color: #86A8E7;
+    transform: translateY(-6px);
+  }
+  
+  .btnTrolley:hover::before, 
+  .btnTrolley:focus::before {
+    opacity: 1;
+  }
+  
+  .btnTrolley::after {
+    content: '';
+    width: 33px; height: 33px;
+    border-radius: 100%;
+    border: 6px solid rgba(255, 255, 255, 0.1);
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  .btnTrolley:hover::after, 
+  .btnTrolley:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 120px;
+      height: 120px;
+      opacity: 0;
+    }
+  }
+
+.trolleyPopup{
+    width: 900px;
+    background:linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255,0));
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255,0.18);
+    box-shadow: 0 8px 35px 0 rgba(0, 0, 0, 0.37);
+    height: 80vh;
+    position: absolute;
+    z-index: 2;
+    position: fixed;
+    border-radius: 20px;
+    transform: translate(0%, 10%);
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.responsePopup{
+    width: 900px;
+    background:linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255,0));
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255,0.18);
+    box-shadow: 0 8px 35px 0 rgba(0, 0, 0, 0.37);
+    height: 80vh;
+    position: absolute;
+    z-index: 2;
+    position: fixed;
+    border-radius: 20px;
+    transform: translate(0%, 10%);
+    flex-direction: column;
+    flex-wrap: wrap;
+    scrollbar-width: thin;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    top: -15px;
+    margin: 3px;
+    font-weight: 500;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.breadCrump{
+    width: 886px;
+    height: 15vh;
+    border-bottom:2px solid #f0ebf4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: none;
+}
+
+.trolleyPopup div img{
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin:5px;
+}
+
+.item p{
+    margin:5px;
+}
+
+.btnDelete{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: none;
+    color: #a1c3d1;
+    cursor: pointer;
+}
+
+.goodsCount{
+    font-size: 25px;
+    color:#f0ebf4;
+}
+
+.goodsPrice{
+    font-size: 25px;
+    color:#f0ebf4;
+}
+
+.goodsCount span{
+    font-weight: 700;
+    color: #f172a1;
+    font-family: "Rakkas";
+}
+
+.goodsPrice span{
+    font-weight: 700;
+    color:#f172a1;
+    font-family: "Rakkas";
+}
+
+.namP{
+    color:#f0ebf4;
+}
+
+.prcP{
+    color:#f172a1;
+    font-family: "Rakkas";
+}
+
+.response{
+    cursor: pointer;
+}
+
+.xy{
+    border-bottom:2px solid #f0ebf4;
+    border-top:none;
+    height: 3vh;
+}
+
+.responseContainer{
+    height: 50vh;
+    width: 886px;
+    flex-direction: column;
+    align-items:flex-start;
+    overflow-y: scroll;
+    background-color: none;
+    margin: 20px 0;
+}
+
+.inputContainer{
+    position: relative;
+    display: flex;
+    align-items:flex-end;
+    height: 6em;
+    background-color: none;
+    width: 100%;
+    background-color: none;
+  }
+    
+.resBtn {
+    position: absolute;
+    right:210px;
+    display: flex;
+    color: #f0ebf4;
+    font-size: 25px;
+    cursor: pointer;
+    bottom: 10px;
+}
+
+.responseContainer .item{
+    color: #f0ebf4;
+    font-size: 25px;
+
+}
+
+.fa-xmark{
+    position: absolute;
+    left:20px;
+    font-size: 25px;
+    color: #f172a1;
+    bottom:55px;
+    cursor: pointer;
+    transition: 0.25s;
+    
+}
+
+.fa-xmark:hover{
+    font-size: 28px;
+}
+
+#btnClose:hover{
+    font-size: 28px;
+}
+
+#btnClose{
+    position: absolute;
+    margin-right: 90%;
+    font-size: 25px;
+    color: #f172a1;
+    margin-bottom: 47.5%;
+}
+
+.inputRes {
+    position: absolute;
+    padding: 10px;
+    display: block;
+    width: 350px;
+    border-bottom: 2px solid #f0ebf4;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    background-color:transparent;
+    outline: none;
+    left: 350px;
+    font-size: 25px;
+    color: #f0ebf4;
+}
+
+label {
+    color: #f0ebf4;
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 355px;
+    top: 45px;
+    transition: 0.3s ease all;
+    -moz-transition: 0.28s ease all;
+    -webkit-transition: 0.28s ease all;
+}
+
+input:focus ~ label, input:valid ~ label {
+    top: 30px;
+    font-size: 14px;
+    color: #86A8E7;
+}
+
+
+input:focus ~ .resBtn{
+    color: #86A8E7;
+}
+
+  .bar {
+    position: relative;
+    display: block;
+    width: 350px;
+    left: 350px;
+  }
+  .bar:before, .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #86A8E7;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  .bar:before {
+    left: 50%;
+  }
+  .bar:after {
+    right: 50%;
+  }
+  
+
+  input:focus ~ .bar:before,
+  input:focus ~ .bar:after {
+    width: 50%;
+  }
+
+  .wrapper nav{
+    height: 100px;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+}
+
+.wrapper nav li{
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 20px;
+    position: relative;
+    color: #f0ebf4;
+    font-weight: 600;
+    transition: 0.25s;
+} 
+
+.wrapper nav li:hover{
+    color: #86A8E7;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.wrapper h1{
+    font-weight: 300;
+    color: #f0ebf4;
+    margin: 100px;
+    font-family: "IBM Plex Mono";
+}
+
+.firstP{
+    margin-bottom: 480px;
+    font-family: "IBM Plex Mono";
+    font-weight: 700;
+    font-size: 50px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke:1px white;
+    text-shadow: -3px 0px white;
+}
+
+.secondP{
+    margin-bottom: 480px;
+    font-family: "Crimson Text";
+    font-weight: 700;
+    font-size: 30px;
+    color: #86A8E7;
+}
+
+.secondText{
+    margin-bottom: 480px;
+    font-family: "IBM Plex Mono";
+    font-weight: 300;
+    font-size: 50px;
+    color: #f0ebf4;
+}
+
+.thirdP{
+    margin-bottom: 480px;
+    font-family:"Oi";
+    font-weight: 100;
+    font-size: 50px;
+    color: #86A8E7;
+}
+
+.thirdText{
+    margin-bottom: 480px;
+    font-family: "Modak";
+    font-weight: 100;
+    font-size: 50px;
+    color: #f172a1;
+}
+
+.thirdText2{
+    margin-bottom: 480px;
+    font-family: "Rakkas";
+    font-weight: 800;
+    font-size: 50px;
+    color: #f0ebf4;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.fa-moon{
+    color: white;
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    font-family: "IBM Plex Mono";
+    font-weight: 300;
+    color: #86A8E7;
+    margin: 10px;
+}
