@@ -8,5 +8,5 @@ Technology: js, html, css, unsplash.
 
 https://brilliant-babka-cbaae7.netlify.app/
 
-![Image alt](https://github.com/africanecMorj/-horrorscope-Clocks-shop/blob/main/Снимок%20экрана%20(185).png)
+![Image alt](https://i.postimg.cc/Mp4ShrW9/185.png)
 
